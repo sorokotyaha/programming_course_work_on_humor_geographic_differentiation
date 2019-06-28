@@ -1,0 +1,60 @@
+.formpage{
+	padding: 20px 0;
+	//text-align: center;
+	margin: 0 auto;
+}
+
+.formpage h1{
+	text-align: center;
+}
+
+.form{
+	margin: 40px 0 20px 150px;
+}
+
+.form input, select{
+	//display: block;
+	margin-top: 10px;
+	//margin-left: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-radius: 20px;
+	border: 1px solid #222;
+	outline: none;
+}
+
+.form label{
+	display: flex;
+	padding-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.btn{
+	margin-left: 0;
+	background: #fff;
+	color: #222;
+	font-weight: bold;
+	border: 4px solid #222;
+	cursor: pointer;
+	transition: 0.5s ease all;
+}
+
+.btn:hover{
+	transform: scale(1.1);
+	background: #222;
+	color: #fff;
+}
+
+input[type="submit"]{
+	margin-top: 30px;
+}
