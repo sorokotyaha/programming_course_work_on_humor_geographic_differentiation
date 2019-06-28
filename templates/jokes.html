@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, width=device-width"/>
+    <meta charset="UTF-8">
+    <title>Domain</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jokes.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="menu">
+                    <nav class="nav">
+                        <ul class="navmenu">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('static', filename='html/about_me.html') }}">About Me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="follow">
+                        <a href="">
+                            <img src="{{ url_for('static', filename='img/facebook-logo.png') }}"
+                                 alt="Facebook">
+                        </a>
+                        <a href="">
+                            <img src="{{ url_for('static', filename='img/google-plus.png') }}"
+                                 alt="Google">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="quote">
+        <blockquote>{{ joke }}</blockquote>
+        <form action="/rate" method="post">
+            <div id="reviewStars-input">
+                <input id="star-10" type="radio" name="reviewStars" value="10"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-9" type="radio" name="reviewStars" value="9"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-8" type="radio" name="reviewStars" value="8"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-7" type="radio" name="reviewStars" value="7"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-6" type="radio" name="reviewStars" value="6"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-5" type="radio" name="reviewStars" value="5"/>
+                <label title="gorgeous" for="star-4"></label>
+
+                <input id="star-4" type="radio" name="reviewStars" value="4"/>
+                <label title="good" for="star-3"></label>
+
+                <input id="star-3" type="radio" name="reviewStars" value="3"/>
+                <label title="regular" for="star-2"></label>
+
+                <input id="star-2" type="radio" name="reviewStars" value="2"/>
+                <label title="poor" for="star-1"></label>
+
+                <input id="star-1" type="radio" name="reviewStars" value="1"/>
+                <label title="bad" for="star-0"></label>
+            </div>
+
+            <input type="submit" value="Rate joke" class="btn" />
+        </form>
+    </div>
+</body>
+</html>
